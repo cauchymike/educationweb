@@ -1,0 +1,16 @@
+{% extends "base.html"%}
+
+{% block content %}
+<div class="jumboton">
+    <form method="POST">
+        {{form.hidden_tag()}}
+        {{form.email.label}}{{form.email(placeholder="Email")}}<br>
+        {{form.password.label}}{{form.password(placeholder="Password")}}<br>
+        {{form.submit(class="btn btn-outline-success my-2 my-sm-0")}}
+
+    </form>
+
+
+</div>
+
+{% endblock %}

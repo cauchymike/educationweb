@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+
+{% block content %}
+<div class= "formwrapper">
+    <form method="POST">
+        {{form.hidden_tag()}}
+       <div class="form-field"> {{form.email.label}}:{{form.email(placeholder="Email")}}</div>
+        <div class="form-field">{{form.username.label}}:{{form.username(placeholder="Username")}}</div>
+       <div class="form-field"> {{form.password.label}}:{{form.password(placeholder="Password")}}</div>
+     <div class="form-field"> {{form.pass_confirm.label}}:{{form.pass_confirm}} </div>
+        {{form.submit(class="btn btn-outline-success my-2 my-sm-0")}}
+
+    </form>
+
+
+</div>
+
+{% endblock %}
